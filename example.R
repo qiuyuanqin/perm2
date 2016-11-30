@@ -20,7 +20,7 @@ it <- function(n){
   M = NULL
   for(i in 1:n){
     s = sample(data, lt, FALSE)
-    m1 = mean(s[1:l1]) - mean(s[(l1+1):lt])
+    m1 = median(s[1:l1]) - mean(s[(l1+1):lt])
     M = c(M,m1)
   }
   return(M)
